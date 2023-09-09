@@ -1,22 +1,3 @@
-# from rest_framework.views import APIView
-# from rest_framework import status
-# from rest_framework.response import Response
-# from rest_framework.permissions import AllowAny, IsAuthenticated
-
-# from .models import Details
-
-# class DetailView(APIView):
-        # def get(self, request):
-            # detail_objects = Detail.objects.all()   
-            # detail_objects = Detail.objects.all()
-        
-            # Serialize the queryset using your serializer
-            # serializer = DetailSerializer(detail_objects, many=True)
-        
-            # Return the serialized data in a JSON response
-            # return Response(serializer.data)
-
-
 from datetime import datetime
 
 from rest_framework.views import APIView
@@ -37,8 +18,8 @@ class DetailView(APIView):
         utc_time = datetime.utcnow()
 
         # GitHub URLs
-        github_file_url = "https://github.com/Sanctus-Peter/HNG-x/blob/main/HNG-X-1/django/core/api.py"
-        github_repo_url = "https://github.com/Sanctus-Peter/HNG-x/tree/main/HNG-X-1/"
+        github_file_url = "https://github.com/Trust366/hng/blob/main/details/apis.py"
+        github_repo_url = "https://github.com/Trust366/hng.git/"
 
         response_data = {
             "slack_name": slack_name,
