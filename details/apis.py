@@ -15,7 +15,7 @@ class DetailView(APIView):
 
         # Current day and time
         current_day = datetime.now().strftime("%A")
-        utc_time = datetime.utcnow()
+        utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
         # GitHub URLs
         github_file_url = "https://github.com/Trust366/hng/blob/main/details/apis.py"
