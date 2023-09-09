@@ -10,7 +10,6 @@ jsonschema-specifications
 pytz==2023.3.post1
 PyYAML
 referencing
-rpds-py==0.10.2
 sqlparse
 typing_extensions
 tzdata
